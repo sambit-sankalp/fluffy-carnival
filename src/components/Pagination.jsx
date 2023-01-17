@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useCallback } from 'react';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
@@ -25,13 +26,13 @@ function PaginationNav1({
 }) {
   const renderPageLinks = useCallback(() => {
     if (pageCount === 0) return null;
-    console.log(pageCount, pageIndex);
+    
     const visiblePageButtonCount = 3;
     let numberOfButtons =
       pageCount < visiblePageButtonCount ? pageCount : visiblePageButtonCount;
     const pageIndices = [pageIndex];
     numberOfButtons--;
-    console.log(Array(numberOfButtons), pageIndices);
+    
     [...Array(numberOfButtons)].forEach((_item, itemIndex) => {
       const pageNumberBefore = pageIndices[0] - 1;
       const pageNumberAfter = pageIndices[pageIndices.length - 1] + 1;

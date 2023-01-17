@@ -1,70 +1,162 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-## Available Scripts
+<br />
+<p align="center">
+  <a href="https://github.com/sambit-sankalp/fluffy-carnival">
+    <img src="https://i.pinimg.com/originals/5f/df/a9/5fdfa98001a201aed81d5119d0456915.jpg" alt="Logo" width="130">
+  </a>
 
-In the project directory, you can run:
+  <h3 align="center">Watcher</h3>
 
-### `npm start`
+  <p align="center">
+    The repository for the website of Movies
+    <br />
+    <a href="https://fluffy-carnival-pi.vercel.app/">View Live</a>
+  </p>
+</p>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<!-- TABLE OF CONTENTS -->
+<details open="open">
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+      </ul>
+        <li><a href="#built-with">Built With</a></li>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#running-the-project">Running the project</a></li>
+      </ul>
+    </li>
+    <li><a href="#problems-faced">Problems Faced</a></li>
+    <li><a href="#contributors-">Contributors</a></li>
+  </ol>
+</details>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## About The Project
 
-### `npm test`
+The Movies website to search for movies
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Built With
 
-### `npm run build`
+Following technologies and libraries are used for the development of this website
+  
+### Frontend
+- [React](https://reactjs.org/) : Used for building the interfaces for the project due to various features like reusable components etc.
+- [Axios](https://axios-http.com/docs/intro) : Used on the client side so that data can be fetched using APIs.
+- [TailwindCSS](https://tailwindcss.com/) : Used for adding CSS to the pages of the website.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Getting Started
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+To setup the project locally the steps below.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Prerequisites
 
-### `npm run eject`
+- [Node.js](https://nodejs.org/en/download/)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+  ```sh
+  # Homebrew
+  brew install nodejs
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+  # Sudo apt
+  sudo apt install nodejs
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+  # Packman
+  pacman -S nodejs
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+  # Module Install
+  dnf module install nodejs:<stream> # stream is the version
 
-## Learn More
+  # Windows (chocolaty)
+  cinst nodejs.install
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+  ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- [Git](https://git-scm.com/downloads)
 
-### Code Splitting
+```sh
+  # Homebrew
+  brew install git
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+  # Sudo apt
+  apt-get install git
 
-### Analyzing the Bundle Size
+  # Packman
+  pacman -S git
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+  # Module Install (Fedora)
+  dnf install git
 
-### Making a Progressive Web App
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+### Running the project.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+The project uses YARN. It is strictly advised to stick with NPM so as to avoid dependency conflicts down the line.
 
-### Deployment
+```
+## Install Dependencies
+npm install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Run the Project
+npm run start
 
-### `npm run build` fails to minify
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Following are the commands to remove/add new dependencies using yarn
+
+```
+## Add a new Package
+npm i <package-name>
+
+## Remove an existing Package
+npm uninstall <package-name>
+
+## Save Package as a Dev Dependency
+npm i <package-name> --save-dev
+```
+
+## Code Architecture
+
+`src` directory: This is the root directory of the project and contains all the source code.
+
+`public` directory: This directory contains the HTML file that serves as the entry point for the application and any other static assets that need to be served.
+
+`components` directory: This directory contains the individual React components that make up the application.
+
+`pages` directory: This directory contains the single React pages that consists of various components make up the application.
+
+`index.js` file: This file serves as the entry point for the application and renders the root component to the DOM.
+
+`package.json` file: This file contains the project's dependencies and scripts for building and running the application.
+
+`tailwind.config.js` file: This file contains the configuration for the tailwindcss, which is used to add style to the application's .jsx/.js files.
+
+
+## Contributors ✨
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/sambit-sankalp"><img src="https://avatars.githubusercontent.com/u/82284130?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Sambit Sankalp</b></sub></a><br /><a href="https://github.com/sambit-sankalp/project-pilot/commits?author=sambit-sankalp" title="Code">💻</a></td>
+  </tr>
+</table>
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!

@@ -62,12 +62,10 @@ const SearchPage = () => {
 
   useEffect(() => {
     const { Director, Actors } = additionals;
-    console.log(additionals);
+
     setLoading(true);
     setData((prev) => {
-      console.log(prev);
       return prev.filter((movie) => {
-        console.log(movie);
         return (
           movie.Director.includes(Director) && movie.Actors.includes(Actors)
         );
@@ -75,8 +73,6 @@ const SearchPage = () => {
     });
     setLoading(false);
   }, [additionals, keyword]);
-
-  console.log(data);
 
   return (
     <div className="w-full flex flex-col justify-start items-center pb-20">
