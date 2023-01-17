@@ -100,8 +100,6 @@ To setup the project locally the steps below.
 
 ### Running the project.
 
-The project uses YARN. It is strictly advised to stick with NPM so as to avoid dependency conflicts down the line.
-
 ```
 ## Install Dependencies
 npm install
@@ -111,7 +109,7 @@ npm run start
 
 ```
 
-Following are the commands to remove/add new dependencies using yarn
+Following are the commands to remove/add new dependencies using npm
 
 ```
 ## Add a new Package
